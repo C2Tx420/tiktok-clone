@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    min-height: 500px;
+    justify-content: space-between;
+    .content{
+        width: 692px;
+        background: burlywood;
+        margin: 0 16px;
+        padding: 24px 0;
+    }
+}

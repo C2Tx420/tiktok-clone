@@ -1,0 +1,32 @@
+@import url('./reset.scss');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --default-layout-container: 1150px;
+    --default-layout-header-height: 60px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: var(--default-layout-container);
+}
