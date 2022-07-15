@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          {publicRoutes.map(route =>{
+          {publicRoutes.map((route,idx) =>{
             const Page = route.component;
             let Layout = DefaultLayout;
 
@@ -18,7 +18,7 @@ function App() {
               Layout = Fragment;
             };
 
-            return <Route path={route.path} element={<Layout> <Page/> </Layout>}/>
+            return <Route key={idx} path={route.path} element={<Layout> <Page/> </Layout>}/>
           })}
         </Routes>
       </BrowserRouter>

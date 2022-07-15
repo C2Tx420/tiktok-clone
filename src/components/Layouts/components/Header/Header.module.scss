@@ -1,4 +1,9 @@
 .wrapper{
+    --search-background-color: rgba(22, 24, 35, 0.06);
+    --search-border-radius: 92px;
+    --search-icon-color: rgba(22, 24, 35, 0.34);
+    --search-btn-width: 52px;
+
     width: 100%;
     height: var(--default-layout-header-height);
     display: flex;
@@ -6,5 +11,14 @@
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
 }
 .container{
-    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+}
+
+.action{
+
 }
