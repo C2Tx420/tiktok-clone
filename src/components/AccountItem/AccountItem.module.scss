@@ -1,0 +1,46 @@
+.account{
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    cursor: pointer;
+    &__avatar{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        margin-right: 12px;
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info{
+        min-width: 0;
+        flex: 0 1 auto;
+        &-name{
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin: 0;
+            .check-icon{
+                font-size: 1.4rem;
+                margin-left: 4px;
+                color: rgb(32, 213, 236);
+            }
+        }
+        &-desc{
+            margin: 0;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: rgba(22, 24, 35, 0.5);
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

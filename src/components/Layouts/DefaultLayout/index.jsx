@@ -5,8 +5,9 @@ import Footer from '../components/Footer'
 import styles from './defaultLayout.module.scss'
 import classNames from 'classnames/bind'
 
+const cx = classNames.bind(styles);
+
 export default function DefaultLayout({children}) {
-  const cx = classNames.bind(styles)
   return (
     <>
         <Header/>

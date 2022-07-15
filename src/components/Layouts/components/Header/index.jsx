@@ -4,8 +4,9 @@ import styles from './Header.module.scss'
 import image from 'src/assets/image'
 import Search from '../Search'
 
+const cx = classNames.bind(styles);
+
 export default function Header() {
-  const cx = classNames.bind(styles)
   return (
     <header className={cx('wrapper')}>
       <div className={`container ${cx('container')}`}>
