@@ -1,0 +1,71 @@
+.wrapper{
+    --primary-hover-bg: #c92847eb;
+    --outline-border: rgba(22, 24, 35, 0.12);
+    --outline-hover-bg: rgba(22, 24, 35, 0.03);
+    --primary-outline-hover-bg: rgba(254, 44, 85, 0.06);
+    font-size: 1.6rem;
+
+    border-radius: 4px;
+    min-width: 100px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+    + .wrapper{
+        margin-left: 10px;
+    }
+}
+
+.disabled{
+    opacity: .5;
+    pointer-events: none;
+}
+
+.primary{
+    background-color: var(--primary-cl);
+    color: var(--white-cl);
+    font-weight: 700;
+    &:hover{
+        background-color: var(--primary-hover-bg);
+    }
+}
+
+.outline{
+    font-weight: 600;
+    border-color: var(--outline-border);
+    &:hover{
+        background-color: var(--outline-hover-bg);
+    }
+    &.primary{
+        border-color: var(--primary-cl);
+        background-color: transparent;
+        color: var(--primary-cl);
+        &:hover{
+            background-color: var(--primary-outline-hover-bg);
+        }
+    }
+}
+
+.rounded{
+    border-radius: 52px;
+}
+
+.small{
+    min-width: 88px;
+    padding: 4px 16px;
+}
+
+.large{
+    padding: 14px 16px;
+    min-width: 146px;
+}
+
+.icon + span, span + .icon{
+    margin-left: 4px;
+}

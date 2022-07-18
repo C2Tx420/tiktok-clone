@@ -16,7 +16,7 @@ export default function Search() {
 
   useEffect(()=>{
     setTimeout(()=>{
-      setVisible([1])
+      setVisible([])
     },1000)
   })
   return (
