@@ -4,9 +4,9 @@ import styles from './Wrapper.module.scss'
 
 const cx = classNames.bind(styles)
 
-export default function Wrapper({children}) {
+export default function Wrapper({className, children}) {
   return (
-    <div className={cx('wrapper')}>
+    <div className={cx('wrapper',{[className]:className})}>
         {children}
     </div>
   )
