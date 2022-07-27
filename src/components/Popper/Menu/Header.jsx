@@ -8,11 +8,11 @@ import MenuItem from './MenuItem'
 
 const cx = classNames.bind(styles)
 
-export default function Menu({data,children}) {
+export default function Header({data,children}) {
 
   const renderItem = () => {
     return data.map(item=>{
-      return <MenuItem data={item}/>
+      return <HeaderItem data={item}/>
     })
   };
 
